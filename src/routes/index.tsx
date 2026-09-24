@@ -16,7 +16,7 @@ import { Reveal } from "@/components/Reveal";
 import { SectionHeader } from "@/components/SectionHeader";
 import { SkillGroup } from "@/components/SkillGroup";
 import { ProjectCard } from "@/components/ProjectCard";
-import { education, expertise, highlights, site } from "@/content/site";
+import { education, expertise, site } from "@/content/site";
 import { skillGroups } from "@/content/skills";
 import { featuredProjects } from "@/content/projects";
 
@@ -137,21 +137,6 @@ function Home() {
         </Reveal>
       </section>
 
-      {/* ---------------- HIGHLIGHTS ---------------- */}
-      <section className="mx-auto max-w-6xl px-6 pt-20">
-        <div className="panel grid grid-cols-2 gap-y-8 p-8 sm:p-10 lg:grid-cols-4">
-          {highlights.map((item, i) => (
-            <Reveal key={item.label} delay={i * 80}>
-              <p className="font-display text-2xl font-semibold sm:text-3xl">
-                {item.value}
-              </p>
-              <p className="mt-2 text-xs text-muted-foreground sm:text-sm">
-                {item.label}
-              </p>
-            </Reveal>
-          ))}
-        </div>
-      </section>
 
       {/* ---------------- EXPERTISE ---------------- */}
       <section className="mx-auto max-w-6xl px-6 pt-28 sm:pt-36">
