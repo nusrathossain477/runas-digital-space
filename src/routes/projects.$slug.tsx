@@ -55,7 +55,7 @@ function Block({
   items,
 }: {
   title: string;
-  items?: string[];
+  items?: string[] | undefined;
 }) {
   if (!items?.length) return null;
   return (
